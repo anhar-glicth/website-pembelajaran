@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Tutorial Belajar Pemrograman C++ Lengkap dari Dasar hingga Function. Website Pembelajaran Interaktif Buatan Muhammad Anhar Solihin dengan Pemutar Video Terintegrasi.">
+  <meta name="keywords" content="C++, Belajar C++, Tutorial C++, Pemrograman C++, Dasar C++, Fungsi C++, W3Schools C++, Muhammad Anhar Solihin">
+  <meta name="author" content="Muhammad Anhar Solihin">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Tutorial C++ | Website Buatan Muhammad Anhar Solihin</title>
+  
+  <link rel="stylesheet" href="css/style.css?v=2.1">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2304AA6D'/><text x='50%' y='65%' font-size='52' font-weight='bold' text-anchor='middle' fill='%23ffffff' font-family='monospace'>C++</text></svg>">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <header class="top-nav" id="topNav">
+    <div class="top-nav-left">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Buka Menu Topik">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="index.html" class="brand-logo" title="Tutorial Pemrograman C++ - Muhammad Anhar Solihin">
+        <span class="brand-badge">C++</span>
+        <div class="brand-text">
+          <span class="brand-title">Tutorial C++</span>
+          <span class="brand-subtitle">Website Buatan Muhammad Anhar Solihin</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="top-nav-center">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="mainSearch" class="search-input" placeholder="Cari topik C++ (misal: percabangan, looping, fungsi, video)..." autocomplete="off">
+      </div>
+    </div>
+
+    <div class="top-nav-right">
+      <a href="editor.html" target="_blank" class="nav-action-btn btn-primary" id="topNavRunBtn" title="Buka Editor Interaktif di Halaman Baru">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+        <span class="btn-quick-run-text">Editor C++</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       SUBHEADER CATEGORY SCROLLER
+       ======================================================================== -->
+  <nav class="sub-nav" aria-label="Kategori Materi">
+    <div class="sub-nav-track" id="subNavTrack">
+      <!-- Dinamis melalui JavaScript -->
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       MAIN APP CONTAINER (SIDEBAR & CONTENT)
+       ======================================================================== -->
+  <div class="app-container">
+    
+    <!-- Mobile Backdrop -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- Left Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Daftar Modul C++</div>
+        <input type="text" id="sidebarSearch" class="sidebar-search" placeholder="Filter materi..." autocomplete="off">
+      </div>
+      <div class="sidebar-content" id="sidebarContent">
+        <!-- Render dinamis dari TOPICS_DATA -->
+      </div>
+    </aside>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-wrapper" id="mainWrapper">
+      <div class="content-inner" id="contentContainer">
+        <!-- Render dinamis materi C++ & Video Player -->
+      </div>
+
+      <!-- Footer placed inside main-wrapper so it always stays at the natural bottom -->
+      <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <span class="brand-badge" style="font-size: 0.85rem; padding: 3px 8px;">C++</span>
+              <span>Tutorial Pemrograman C++</span>
+            </div>
+            <div class="footer-author-tag">
+              Website Buatan Muhammad Anhar Solihin
+            </div>
+            <div class="footer-links">
+              <a href="#intro" class="footer-link">Dasar</a>
+              <a href="#conditions" class="footer-link">Percabangan</a>
+              <a href="#while-loop" class="footer-link">Perulangan</a>
+              <a href="#arrays" class="footer-link">Array</a>
+              <a href="#pointers-references" class="footer-link">Pointer</a>
+              <a href="#functions" class="footer-link">Fungsi</a>
+              <a href="#video-gallery" class="footer-link">Video Tutorial</a>
+              <a href="#quiz-comprehensive" class="footer-link">Evaluasi</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span>Platform Pembelajaran C++ Terstruktur. Website Buatan Muhammad Anhar Solihin.</span>
+            <span>Tonton Video Pembelajaran Langsung di Website Tanpa Perlu Keluar.</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/topics.js?v=2.1"></script>
+  <script src="js/app.js?v=2.1"></script>
+</body>
+</html>
